@@ -58,7 +58,7 @@ export const Login = () => {
   });
 
   if (isLoggedIn) {
-    return <Navigate to={"/"} />;
+    return <Navigate to={"/todolist-app"} />;
   }
 
   return (
