@@ -1,0 +1,9 @@
+@import "./common/c1-styles/s1-sass/variables";
+@import "./common/c1-styles/s1-sass/mixins";
+
+.contentContainer{
+  min-height: 100vh;
+  @include flexContainer(column, center, center);
+  margin: 10px;
+  //box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
+}

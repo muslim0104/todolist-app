@@ -1,0 +1,24 @@
+@import "../../c1-styles/s1-sass/variables";
+
+.container{
+  min-height: 10px;
+  background-color: $secondaryBackground;
+  display: flex;
+  justify-content: space-between;
+  .navContainer{
+    display: flex;
+    padding: 6px;
+    align-items: end;
+  }
+  .ownContainer{
+    display: flex;
+    padding: 6px;
+    align-items: end;
+    .ownerName{
+      position: relative;
+      margin-right: 6px;
+      top: -3px;
+      font-size: 1.4rem;
+    }
+  }
+}

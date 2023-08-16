@@ -1,13 +1,18 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./app/App";
-import { store } from "app/store";
-import { Provider } from "react-redux";
+import ReactDOM from "react-dom";
+import "./index.scss";
+import {App} from "./App";
+import reportWebVitals from "./reportWebVitals";
+import {Provider} from "react-redux";
+import {store} from "./bll/b1-store/store";
 
-const root = createRoot(document.getElementById("root") as HTMLElement);
-root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+ReactDOM.render(
+    <React.StrictMode>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
+
+reportWebVitals();
