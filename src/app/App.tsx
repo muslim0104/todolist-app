@@ -62,7 +62,7 @@ function App() {
         </AppBar>
         <Container fixed>
           <Routes>
-            <Route path={"/todolist-app"} element={<TodolistsList />} />
+            <Route path={"/todolist-app/"} element={<TodolistsList />} />
             <Route path={"/login"} element={<Login />} />
           </Routes>
         </Container>
